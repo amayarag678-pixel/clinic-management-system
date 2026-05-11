@@ -1,0 +1,1 @@
+console.log("Clinic Management System Loaded");

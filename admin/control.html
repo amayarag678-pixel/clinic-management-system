@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Control Panel</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f4f6f9;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #dc3545, #6610f2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .table th {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body class="container mt-4">
+
+    <!-- Header -->
+    <div class="header text-center">
+        <h2>🛡️ Admin Control Panel</h2>
+        <p>Manage Doctors, Patients, and Appointments</p>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="row mt-4">
+
+        <div class="col-md-4">
+            <div class="card p-3 text-center">
+                <h5>Total Doctors</h5>
+                <h3>12</h3>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 text-center">
+                <h5>Total Patients</h5>
+                <h3>58</h3>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 text-center">
+                <h5>Appointments</h5>
+                <h3>24</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Manage Doctors -->
+    <div class="card mt-4 p-3">
+        <h4>👨‍⚕️ Manage Doctors</h4>
+
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Specialization</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Dr. John</td>
+                    <td>Cardiologist</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Dr. Smith</td>
+                    <td>Dermatologist</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Manage Patients -->
+    <div class="card mt-4 p-3">
+        <h4>🧑‍🤝‍🧑 Manage Patients</h4>
+
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Rahul</td>
+                    <td>25</td>
+                    <td>
+                        <button class="btn btn-sm btn-info">View</button>
+                        <button class="btn btn-sm btn-danger">Remove</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>102</td>
+                    <td>Anu</td>
+                    <td>30</td>
+                    <td>
+                        <button class="btn btn-sm btn-info">View</button>
+                        <button class="btn btn-sm btn-danger">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- System Controls -->
+    <div class="card mt-4 p-3">
+        <h4>⚙️ System Controls</h4>
+
+        <div class="row mt-3">
+
+            <div class="col-md-4">
+                <button class="btn btn-success w-100">Add Doctor</button>
+            </div>
+
+            <div class="col-md-4">
+                <button class="btn btn-primary w-100">Add Patient</button>
+            </div>
+
+            <div class="col-md-4">
+                <button class="btn btn-danger w-100">Reset System</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

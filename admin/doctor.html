@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Manage Doctors</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f4f6f9;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #dc3545, #0d6efd);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .table th {
+            background-color: #f1f1f1;
+        }
+
+        .badge-status {
+            font-size: 13px;
+            padding: 6px 10px;
+        }
+    </style>
+</head>
+
+<body class="container mt-4">
+
+    <!-- Header -->
+    <div class="header text-center">
+        <h2>🛡️ Admin - Doctor Management</h2>
+        <p>Add, Update, and Manage Doctors</p>
+    </div>
+
+    <!-- Add Doctor Form -->
+    <div class="card mt-4 p-3">
+        <h4>➕ Add New Doctor</h4>
+
+        <div class="row mt-3">
+
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Doctor Name">
+            </div>
+
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Specialization">
+            </div>
+
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Experience (Years)">
+            </div>
+
+            <div class="col-md-3">
+                <button class="btn btn-success w-100">Add Doctor</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Doctor List -->
+    <div class="card mt-4 p-3">
+        <h4>👨‍⚕️ Doctor List</h4>
+
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Specialization</th>
+                    <th>Experience</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>D101</td>
+                    <td>Dr. John</td>
+                    <td>Cardiologist</td>
+                    <td>8 Years</td>
+                    <td>
+                        <span class="badge bg-success badge-status">Available</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>D102</td>
+                    <td>Dr. Smith</td>
+                    <td>Dermatologist</td>
+                    <td>5 Years</td>
+                    <td>
+                        <span class="badge bg-warning text-dark badge-status">Busy</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>D103</td>
+                    <td>Dr. Meera</td>
+                    <td>Neurologist</td>
+                    <td>10 Years</td>
+                    <td>
+                        <span class="badge bg-secondary badge-status">Offline</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Doctor Status Panel -->
+    <div class="card mt-4 p-3">
+        <h4>📊 Doctor Status Overview</h4>
+
+        <div class="row text-center mt-3">
+
+            <div class="col-md-4">
+                <h5>Total Doctors</h5>
+                <h3>3</h3>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Available</h5>
+                <h3 class="text-success">1</h3>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Busy</h5>
+                <h3 class="text-warning">1</h3>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
